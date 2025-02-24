@@ -3,14 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HousingLocationComponent, HousingLocation } from '../housing-location/housing-location.component';
 import { HousingService } from '../housing.service';
 
-
 @Component({
   selector: 'app-home',
   imports: [CommonModule, HousingLocationComponent],
   template: `
       <section>
-      <form>
-        <input type="text" placeholder="Filter by city" #filter/>
+      <form (submit)="preventFormSubmit($event)">
+        <input type="text" placeholder="Filter by city" #filter (keydown.enter)="handleEnterKey($event, filter.value)"/>
         <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
       </form>
     </section>
@@ -30,6 +29,7 @@ export class HomeComponent {
       this.filteredLocationList = housingLocationList;
     });
   }
+
   filterResults(text: string) {
     if (!text) {
       this.filteredLocationList = this.housingLocationList;
@@ -38,5 +38,16 @@ export class HomeComponent {
     this.filteredLocationList = this.housingLocationList.filter((housingLocation) =>
       housingLocation?.city.toLowerCase().includes(text.toLowerCase()),
     );
+  }
+
+  preventFormSubmit(event: Event) {
+    event.preventDefault();
+  }
+
+  handleEnterKey(event: KeyboardEvent, filterValue: string) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      this.filterResults(filterValue);
+    }
   }
 }
