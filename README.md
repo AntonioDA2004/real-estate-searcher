@@ -1,4 +1,4 @@
-# Angular Tutorial Project  
+# Real Estate Searcher  
 
 This is an Angular tutorial project that demonstrates key functionalities, including:  
 
