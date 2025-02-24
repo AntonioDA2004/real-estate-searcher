@@ -1,6 +1,6 @@
 # Real Estate Searcher  
 
-This is an Angular tutorial project that demonstrates key functionalities, including:  
+This is an Angular project that demonstrates key functionalities, including:  
 
 - 🔍 **Search by Location** – Users can filter results based on location.  
 - 🗄 **JSON Database Connection** – The project is connected to a JSON-based database for dynamic data handling.  
