@@ -19,8 +19,7 @@ This is an Angular tutorial project that demonstrates key functionalities, inclu
    `git clone https://github.com/AntonioDA2004/real-estate-searcher.git`  
    `cd real-estate-searcher`
 
-2. Check that your computer has Node.js and npm installed. If not, visit this webpage to download them:
-   `https://nodejs.org`
+2. Check that your computer has Node.js and npm installed. If not, visit  `https://nodejs.org` to download them.
 
 3. Install dependencies:  
    `npm install`
