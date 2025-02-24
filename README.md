@@ -54,7 +54,6 @@ real-estate-searcher/
 │   │-- index.html                 # Main HTML file
 │   │-- main.ts                    # Entry point of the app
 │   │-- styles.css                 # Global styles
-│-- Angular tutorial README.txt    # Documentation file
 │-- angular.json                   # Angular configuration
 │-- db.json                        # JSON database file
 │-- package-lock.json              # Lock file for dependencies
