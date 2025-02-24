@@ -44,8 +44,9 @@ export class HomeComponent {
     event.preventDefault();
   }
 
-  handleEnterKey(event: KeyboardEvent, filterValue: string) {
-    if (event.key === 'Enter') {
+  handleEnterKey(event: Event, filterValue: string) {
+    const keyboardEvent = event as KeyboardEvent;
+    if (keyboardEvent.key === 'Enter') {
       event.preventDefault();
       this.filterResults(filterValue);
     }
