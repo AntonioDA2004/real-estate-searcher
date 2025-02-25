@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/first-app",
+            "outputPath": "dist/real-estate-searcher",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
