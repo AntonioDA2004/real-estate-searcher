@@ -29,7 +29,7 @@ Install JSON Server globally using npm:
  `npm install -g json-server`
 
 ### Troubleshooting
-If you're getting an error when using `npm`, you can run the following command:
+If you're getting an UnauthorizedAccess error when using `npm`, you can run the following command:
 `Set-ExecutionPolicy RemoteSigned –Scope Process`
 
 
