@@ -64,6 +64,7 @@ real-estate-searcher/
 │   │   │-- home/                  # Home component
 │   │   │-- housing-location/      # Housing location component
 │   │   │-- app.component.css      # Component styles
+│   │   │-- app.component.html     # Component HTML file
 │   │   │-- app.component.ts       # Root component logic
 │   │   │-- app.config.ts          # App configuration
 │   │   │-- housing.service.ts     # Service for housing data
