@@ -18,7 +18,7 @@ This is an Angular project that demonstrates key functionalities, including:
 Before running the project, ensure you have the following installed:
 
 ### Node.js and npm
-Install Node.js (which includes npm) by downloading it from [Node.js official website](https://nodejs.org/), or install it using a package manager:
+Install Node.js (which includes npm) by downloading it from [Node.js official website](https://nodejs.org/).
 
 ### Angular CLI
 Install Angular CLI globally using npm:
