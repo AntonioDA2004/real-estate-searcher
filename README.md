@@ -13,22 +13,39 @@ This is an Angular project that demonstrates key functionalities, including:
 ✅ A form to collect user input and process submissions.  
 ✅ Clean, modular Angular code with best practices.  
 
+## ⚙️ Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+### Node.js and npm
+Install Node.js (which includes npm) by downloading it from [Node.js official website](https://nodejs.org/), or install it using a package manager:
+
+### Angular CLI
+Install Angular CLI globally using npm:
+`npm install -g @angular/cli`
+
+### JSON Server
+Install JSON Server globally using npm:
+ `npm install -g json-server`
+
+### Troubleshooting
+If you're getting an error when using `npm`, you can run the following command:
+`Set-ExecutionPolicy RemoteSigned –Scope Process`
+
+
 ## 🛠 Installation  
 
 1. Clone this repository:  
    `git clone https://github.com/AntonioDA2004/real-estate-searcher.git`  
    `cd real-estate-searcher`
    
-2. Check that your computer has Node.js and npm installed. If not, visit this webpage to download them:  
-   `https://nodejs.org`
-
-3. Install dependencies:  
+2. Install dependencies:  
    `npm install`
 
-4. Run the development server:  
+3. Run the development server:  
    `ng serve`  
 
-5. Open in browser:  
+4. Open in browser:  
    `http://localhost:4200`  
 
 ## 🏗 Tech Stack  
