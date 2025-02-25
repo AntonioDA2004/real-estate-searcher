@@ -65,7 +65,9 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "outputPath": "dist/real-estate-searcher",
+              "baseHref": "https://antonioda2004.github.io/real-estate-searcher/"
             },
             "development": {
               "optimization": false,
@@ -92,6 +94,9 @@
           "options": {
             "buildTarget": "first-app:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

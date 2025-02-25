@@ -6,17 +6,7 @@ import { HousingService } from '../housing.service';
 @Component({
   selector: 'app-home',
   imports: [CommonModule, HousingLocationComponent],
-  template: `
-      <section>
-      <form (submit)="preventFormSubmit($event)">
-        <input type="text" placeholder="Filter by city" #filter (keydown.enter)="handleEnterKey($event, filter.value)"/>
-        <button class="primary" type="button" (click)="filterResults(filter.value)">Search</button>
-      </form>
-    </section>
-    <section class="results">
-      <app-housing-location *ngFor="let housingLocation of filteredLocationList" [housingLocation]="housingLocation"></app-housing-location>
-    </section>
-  `,
+  templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
