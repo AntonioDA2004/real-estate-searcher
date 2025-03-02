@@ -89,7 +89,7 @@ real-estate-searcher/
 - The **form** allows users to submit data, which is processed dynamically.  
 - The app fetches data from a **JSON database**, simulating a real backend.  
 
-## 🔗 JSON API Example  
+## 🔗 JSON Server  
 
 To run the JSON server, use:  
 `json-server --watch db.json --port 3000`
