@@ -12,8 +12,8 @@ export class HousingLocationComponent {
   @Input() housingLocation!: HousingLocation;
 
   truncateText(text: string): string {
-    if (text.length > 25) {
-      return text.substring(0, 25) + '...';
+    if (text.length > 70) {
+      return text.substring(0, 70) + '...';
     }
     return text;
   }
