@@ -10,6 +10,13 @@ import { RouterModule } from '@angular/router';
 })
 export class HousingLocationComponent {
   @Input() housingLocation!: HousingLocation;
+
+  truncateText(text: string): string {
+    if (text.length > 25) {
+      return text.substring(0, 25) + '...';
+    }
+    return text;
+  }
 }
 export interface HousingLocation {
   id: number;
