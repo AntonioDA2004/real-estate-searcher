@@ -13,6 +13,11 @@ This is an Angular project that demonstrates key functionalities, including:
 ✅ A form to collect user input and process submissions.  
 ✅ Clean, modular Angular code with best practices.
 
+## 🚀 Future Features
+ 
+✅ When submitting the form, the user receives feedback.  
+✅ Online demo.
+
 ## ⚙️ Prerequisites
 
 Before running the project, ensure you have the following installed:
