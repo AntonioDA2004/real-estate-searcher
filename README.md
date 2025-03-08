@@ -11,7 +11,12 @@ This is an Angular project that demonstrates key functionalities, including:
 ✅ Search functionality with location-based filtering.  
 ✅ Data persistence using a JSON database.  
 ✅ A form to collect user input and process submissions.  
-✅ Clean, modular Angular code with best practices.  
+✅ Clean, modular Angular code with best practices.
+
+## 🚀 Future Features
+
+✅ When submitting the form, the user receives feedback
+✅ Online demo
 
 ## ⚙️ Prerequisites
 
