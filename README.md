@@ -14,7 +14,7 @@ This is an Angular project that demonstrates key functionalities, including:
 
 ## 🚀 Future Features
  
-✅ When submitting the form, the user receives feedback.  
+✅ If the form has invalid values, an error will be displayed. 
 ✅ Online demo.
 
 ## ⚙️ Prerequisites
