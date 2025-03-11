@@ -1,32 +1,55 @@
 <article>
-    <img
-      class="listing-photo"
-      [src]="housingLocation?.photo"
-      alt="Exterior photo of {{ housingLocation?.name }}"
-      crossorigin
-    />
+    <img class="listing-photo" [src]="housingLocation?.photo" alt="Exterior photo of {{ housingLocation?.name }}" crossorigin />
     <section class="listing-description">
-      <h2 class="listing-heading">{{ housingLocation?.name }}</h2>
-      <p class="listing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
+        <h2 class="listing-heading">{{ housingLocation?.name }}</h2>
+        <p class="listing-location">{{ housingLocation?.city }}, {{ housingLocation?.state }}</p>
     </section>
     <section class="listing-features">
-      <h2 class="section-heading">About this housing location</h2>
-      <ul>
-        <li>Units available: {{ housingLocation?.availableUnits }}</li>
-        <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
-        <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
-      </ul>
+        <h2 class="section-heading">About this housing location</h2>
+        <ul>
+            <li>Units available: {{ housingLocation?.availableUnits }}</li>
+            <li>Does this location have wifi: {{ housingLocation?.wifi }}</li>
+            <li>Does this location have laundry: {{ housingLocation?.laundry }}</li>
+        </ul>
     </section>
     <section class="listing-apply">
-      <h2 class="section-heading">Apply now to live here</h2>
-      <form [formGroup]="applyForm" (submit)="submitApplication()">
-        <label for="first-name">First Name</label>
-        <input id="first-name" type="text" formControlName="firstName" />
-        <label for="last-name">Last Name</label>
-        <input id="last-name" type="text" formControlName="lastName" />
-        <label for="email">Email</label>
-        <input id="email" type="email" formControlName="email" />
-        <button type="submit" class="primary">Apply now</button>
-      </form>
+        <h2 class="section-heading">Apply now to live here</h2>
+        <form [formGroup]="applyForm" (submit)="submitApplication()">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" formControlName="firstName" [readonly]="isLoading"/>
+
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" formControlName="lastName" [readonly]="isLoading"/>
+
+            <label for="email">Email</label>
+            <input id="email" type="email" formControlName="email" [readonly]="isLoading"/>
+
+            <div id="applynow-post-container">
+                <button type="submit" class="primary" id="applynow">Apply now</button>
+                <div id="post-pics-container">
+                    <div *ngIf="isLoading" id="espera">
+                        <img src="assets/loading.gif" alt="Loading..." id="esperagif" />
+                    </div>
+                    <div *ngIf="isSuccessful" id="successful">
+                        <img src="assets/successful.png" alt="Success!" id="successpng" />
+                    </div>
+                    <div *ngIf="isError" id="error">
+                        <img src="assets/error.png" alt="Error" id="errorpng" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="post-text-container">
+                <div *ngIf="isLoading" id="espera-text">
+                    <p id="esperatext">Please wait while we process your application...</p>
+                </div>
+                <div *ngIf="isSuccessful" id="succesful-text">
+                    <p id="succesfultext">Your application has been submitted successfully!</p>
+                </div>
+                <div *ngIf="isError" id="error-text">
+                    <p id="errortext">There was an error submitting your application.</p>
+                </div>
+            </div>
+        </form>
     </section>
 </article>

@@ -63,3 +63,30 @@ input {
 .primary {
   cursor: pointer;
 }
+#applynow-post-container {
+  display: flex;
+  flex-direction: row;
+}
+#post-pics-container {
+  align-content: center;
+}
+#post-text-container {
+  margin-top: 10px;
+}
+#espera, #successful, #error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#esperagif, #successpng, #errorpng {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#esperatext, #successfultext, #errortext {
+  margin-left: 5px;
+}
+#applynow {
+  height: 40px;
+}
